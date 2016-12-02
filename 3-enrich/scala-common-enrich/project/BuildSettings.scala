@@ -23,7 +23,8 @@ object BuildSettings {
     organization          :=  "com.snowplowanalytics",
     version               :=  "0.24.0",
     description           :=  "Common functionality for enriching raw Snowplow events",
-    scalaVersion          :=  "2.10.1",
+    scalaVersion          :=  "2.10.6",
+    crossScalaVersions    :=  Seq("2.10.6", "2.11.8"),
     scalacOptions         :=  Seq("-deprecation", "-encoding", "utf8",
                                   "-unchecked", "-feature",
                                   "-target:jvm-1.7"),
@@ -44,9 +45,6 @@ object BuildSettings {
       |""".stripMargin.format(v, n, o, sv))
     Seq(file)
   })
-
-  // For MaxMind support in the test suite
-  import Dependencies._
 
   // Publish settings
   // TODO: update with ivy credentials etc when we start using Nexus
