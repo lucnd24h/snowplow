@@ -108,11 +108,11 @@ class EnrichedEvent {
   @BeanProperty var refr_term: String = _
 
   // Marketing
-  @BeanProperty var mkt_medium: String = _
-  @BeanProperty var mkt_source: String = _
-  @BeanProperty var mkt_term: String = _
-  @BeanProperty var mkt_content: String = _
-  @BeanProperty var mkt_campaign: String = _
+  // @BeanProperty var mkt_medium: String = _
+  // @BeanProperty var mkt_source: String = _
+  // @BeanProperty var mkt_term: String = _
+  // @BeanProperty var mkt_content: String = _
+  // @BeanProperty var mkt_campaign: String = _
 
   // Custom Contexts
   @BeanProperty var contexts: String = _
